@@ -1,0 +1,29 @@
+<!-- res/layout/item_chat.xml -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+    <!-- Balon chat dengan teks -->
+    <LinearLayout
+        android:id="@+id/bubble_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/imageViewProfile"
+        android:layout_toRightOf="@+id/imageViewProfile"
+        android:background="@drawable/chat_bubble"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <!-- Teks pesan -->
+        <TextView
+            android:id="@+id/tv_pesan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ini adalah pesan teks"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>
